@@ -4,7 +4,8 @@ const http = require("http");
 const mongoose = require('mongoose');
 // mongoose.connect('mongodb://127.0.0.1:27017/LonexGetPOSTAPI');
 //mongoose.connect("mongodb+srv://Gaurav:eP2ILjAadWqdYhMda@gauravlonexgetandpost.w5skd46.mongodb.net/?retryWrites=true&w=majority")
-
+const cors = require('cors');
+app.use(cors);
 
 //user routes
 const user_route = require('./routes/userRoutes');
