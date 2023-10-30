@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 app.use(cors());
 
-//user routes
+//user routes 
 const user_route = require('./routes/userRoutes');
 
 app.use('/api', user_route)
